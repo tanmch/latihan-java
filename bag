@@ -1,0 +1,15 @@
+// Access modifiers changes when you make an object
+public class bag extends bag2{
+    private String flavour;
+
+    public void openBag() {
+        System.out.println("Bag is Opened!");
+    }
+
+    public String getFlavour() {
+        return flavour;
+    }
+    public static void main(String[] args) {
+        bag e1 = new bag();
+    }
+}
