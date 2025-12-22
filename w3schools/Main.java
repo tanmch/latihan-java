@@ -1,16 +1,33 @@
 public class Main {
-    int x = 5;
-    int y = 5;
+
+    static void myMethod() {
+        System.out.println("Hello World!");
+    }
+
+    int x;
+    int y;
     final int z = 10;
+    String a;
+    int b;
+
+    //Constructor
+    public Main(String name) {
+        x = 5;
+        y = z;
+        a = name;
+    }
 
     public static void main(String[] args) {
-        Main myObj = new Main();
-        Main myObj2 = new Main();
-        Main myObj3 = new Main();
-        myObj2.y = 10;
+        myMethod();
+        Main myObj = new Main("Testing");
+        Main myObj2 = new Main("Kuranglebih");
+        Main myObj3 = new Main("Testan");
+        System.out.println(myObj3.a + " " + myObj3.x);
+        myObj3.a = "main";
+        myObj3.b = 12;
+        System.out.println(myObj3.a + " " + myObj3.b);
         System.out.println(myObj.x);
-        System.out.println(myObj2.y);
-        System.out.println(myObj3.z);
+        System.out.println(myObj2.y); // Outputs 10 as z = 10
     }
 }
 
